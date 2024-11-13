@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+  --primary : #17f;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    color: white;
+
+}
+html, body { 
+    background: rgb(20, 20, 20);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;  
+  }
+  
+  .shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: var(--primary) ;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  
+  .text {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .shape:hover {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+  
+  .navbar {
+    margin-top: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.2s;
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust as necessary */
+    width: 0;
+    height: 2px; /* Border thickness */
+    background: var(--primary);
+    transition: width 0.3s, left 0.3s;
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .navbar a:hover {
+    color: var(--primary); /* Change text color on hover */
+  }

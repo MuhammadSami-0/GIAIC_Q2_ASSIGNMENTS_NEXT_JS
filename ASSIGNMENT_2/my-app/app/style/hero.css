@@ -1,0 +1,57 @@
+.container1{
+    background-color: antiquewhite;
+    /* border-top: 50px solid rgb(70, 69, 69); */
+    padding: 20px 20px;
+
+}
+
+.container1 .heading{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+
+}
+
+.container1 .heading h1{
+    background-color: antiquewhite;
+}
+
+.hero_container{
+    display: flex;
+    justify-content: space-around;
+    height: 25rem;
+    background-color: antiquewhite;
+}
+
+.text_div{
+   width: 50%;
+   display: flex;
+   align-items: center;
+   background-color: antiquewhite;
+   color: rgb(131, 220, 43)
+}
+.text_div .text{
+   position: relative;
+   right: 90px;
+   width: 40rem;
+}
+
+.text_div .text p{
+    background-color: antiquewhite;
+    color: rgb(131, 220, 43);
+}
+
+.img_div{
+    width: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.img_div img {
+    box-shadow: 3px 3px 5px 3px rgb(79, 75, 75);
+    border-radius: 20px;
+}
+
